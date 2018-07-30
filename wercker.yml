@@ -5,7 +5,7 @@ build:
 
 provision-oke:
   steps:
-    - darrelchia/provision-oke:
+    - chiadarrel/provision-oke:
         NAME_PREFIX:         $NAME_PREFIX
         STORAGE_BUCKET_NAME: $STORAGE_BUCKET_NAME
         USER_OCID:           $USER_OCID
@@ -17,7 +17,7 @@ provision-oke:
 
 deploy-to-oke:
   steps:
-    - darrelchia/deploy-to-oke:
+    - chiadarrel/deploy-to-oke:
         NAME_PREFIX:         $NAME_PREFIX
         STORAGE_BUCKET_NAME: $STORAGE_BUCKET_NAME
         USER_OCID:           $USER_OCID
@@ -31,7 +31,7 @@ deploy-to-oke:
         
 destroy-oke:
   steps:
-    - darrelchia/destroy-oke:
+    - chiadarrel/destroy-oke:
         NAME_PREFIX:         $NAME_PREFIX
         STORAGE_BUCKET_NAME: $STORAGE_BUCKET_NAME
         USER_OCID:           $USER_OCID
